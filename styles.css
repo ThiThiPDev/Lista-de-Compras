@@ -14,6 +14,10 @@
     --degrade-azul: linear-gradient(180deg, #000000 0%, #26327F 100%);
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background: var(--degrade-azul);
     background-repeat: no-repeat;
@@ -40,7 +44,7 @@ main {
     border-radius: 16px;
 
     margin-bottom: 9%;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 h2 {
@@ -166,15 +170,25 @@ ul {
     width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1250px) {
     main {
         margin-top: 50%;
-        width: 95%;
+        width: 88%;
         margin-bottom: 50%;
     }
 
+    h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    hr {
+        width: 110%;
+        transform: translateX(-5%);
+    }
+
     .mensagem-lista-vazia {
-        font-size: 15px;
+        font-size: 14px;
         text-align: center;
     }
 }
