@@ -10,23 +10,24 @@
     --neutro: #F9F9F9;
     --preto: #131730;
     --fonte-titulo: "Krona One", sans-serif;
-    --fonte-texto: 'Numans', sans-serif;
+    --fonte-texto: "Numans", sans-serif;
     --degrade-azul: linear-gradient(180deg, #000000 0%, #26327F 100%);
 }
 
 body {
     background: var(--degrade-azul);
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 main {
     background-color: var(--neutro);
-    margin-top: 64px;
+    margin-top: 9%;
 
     display: flex;
     flex-direction: column;
@@ -37,6 +38,8 @@ main {
 
     align-items: center;
     border-radius: 16px;
+
+    margin-bottom: 9%;
 }
 
 h2 {
@@ -45,6 +48,7 @@ h2 {
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
+    text-align: center;
 }
 
 hr {
@@ -59,6 +63,10 @@ p {
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+}
+
+.mensagem-lista-vazia {
+    text-align: center;
 }
 
 .input-item {
@@ -100,7 +108,7 @@ form {
     display: flex;
     gap: 8px;
 }
-x
+
 ul {
     list-style-type: none;
 }
@@ -145,8 +153,27 @@ ul {
 .item-lista-button {
     border: none;
     background-color: transparent;
+    margin-left: auto;
+    cursor: pointer;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    font-size: 18px;
+    transform: translateY(10px);
 }
 
 .container-lista {
     width: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+    main {
+        margin-top: 50%;
+        width: 95%;
+        margin-bottom: 50%;
+    }
+
+    .mensagem-lista-vazia {
+        font-size: 15px;
+        text-align: center;
+    }
 }
