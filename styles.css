@@ -31,7 +31,7 @@ body {
 
 main {
     background-color: var(--neutro);
-    margin-top: 9%;
+    margin-top: 10%;
 
     display: flex;
     flex-direction: column;
@@ -43,8 +43,8 @@ main {
     align-items: center;
     border-radius: 16px;
 
-    margin-bottom: 9%;
-    transform: scale(1.1);
+    margin-bottom: 10%;
+    transform: scale(1.2);
 }
 
 h2 {
